@@ -4,9 +4,6 @@ local CurrentCam  = game.Workspace.CurrentCamera
 local UIS = game:GetService("UserInputService")-- Made By Mick Gordon
 local WorldToViewportPoint = CurrentCam.WorldToViewportPoint
 local mouseLocation = UIS.GetMouseLocation
-
-game:GetService("StarterGui"):SetCore("SendNotification", {Title = "Made By Mick Gordon", Text = "Enjoy !"})
-
 local function isVisible(player)
     if not player.Character or not player.Character:FindFirstChild("Head") then
         return false
@@ -31,6 +28,8 @@ local function isVisible(player)
         return true
     end
 end
+
+game:GetService("StarterGui"):SetCore("SendNotification", {Title = "Made By Mick Gordon", Text = "Enjoy !"})
 
 local DeleteMob ={
     GUi = {
